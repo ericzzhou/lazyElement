@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div 出现在可视区域时打印日志</title>
+    <style>
+        div {
+            height: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #div1 {
+            background-color: rgb(0, 255, 64);
+        }
+
+        #div2 {
+            background-color: aquamarine;
+        }
+
+        #div3 {
+            background-color: black;
+        }
+
+        #div4 {
+            background-color: blue;
+        }
+
+        #div5 {
+            background-color: blueviolet;
+        }
+
+        #div6 {
+            background-color: brown;
+        }
+
+        #div7 {
+            background-color: burlywood;
+        }
+
+        #div8 {
+            background-color: cadetblue;
+        }
+
+        #div9 {
+            background-color: chartreuse;
+        }
+
+        #div10 {
+            background-color: chocolate;
+        }
+    </style>
+    <script src="./lazyElement.js"></script>
+     <script>
+         function aaa(){
+             console.log('aaa');
+         }
+         function bbb(){
+             console.log('bbb');
+         }
+     </script> 
+</head>
+
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8" class="lazy_element" data-lazy_event="aaa">aaa</div>
+    <div id="div9"></div>
+    <div id="div10" class="lazy_element" data-lazy_event="bbb">bbb</div>
+</body>
+
+</html>
